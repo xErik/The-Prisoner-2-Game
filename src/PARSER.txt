@@ -1,0 +1,952 @@
+72E4-   FF          ???
+72E5-   C6 01       DEC   $01
+72E7-   01 C2       ORA   ($C2,X)
+72E9-   01 02       ORA   ($02,X)
+72EB-   CC 01 03    CPY   $0301
+72EE-   D2 01       CMP   ($01)
+72F0-   04 CE       TSB   $CE
+72F2-   01 05       ORA   ($05,X)
+72F4-   D3          ???
+72F5-   01 06       ORA   ($06,X)
+72F7-   D7          ???
+72F8-   01 07       ORA   ($07,X)
+72FA-   C5 01       CMP   $01
+72FC-   08          PHP
+72FD-   D5 01       CMP   $01,X
+72FF-   09 C4       ORA   #$C4
+7301-   01 0A       ORA   ($0A,X)
+7303-   C9 02       CMP   #$02
+7305-   24 A3       BIT   $A3
+7307-   02          ???
+7308-   25 FF       AND   $FF
+730A-   D7          ???
+730B-   D4          ???
+730C-   02          ???
+730D-   33          ???
+730E-   D5 D0       CMP   $D0,X
+7310-   01 09       ORA   ($09,X)
+7312-   C9 CE       CMP   #$CE
+7314-   00          BRK
+7315-   05 CF       ORA   $CF
+7317-   CE 00 1C    DEC   $1C00
+731A-   CE CF 01    DEC   $01CF
+731D-   0C CD C5    TSB   $C5CD
+7320-   02          ???
+7321-   24 FF       BIT   $FF
+7323-   CE C5 D7    DEC   $D7C5
+7326-   01 16       ORA   ($16,X)
+7328-   CE CE CE    DEC   $CECE
+732B-   00          BRK
+732C-   FE C5 CE    INC   $CEC5,X
+732F-   C4 00       CPY   $00
+7331-   FD C7 C5    SBC   $C5C7,X
+7334-   D4          ???
+7335-   00          BRK
+7336-   01 C2       ORA   ($C2,X)
+7338-   D5 D9       CMP   $D9,X
+733A-   00          BRK
+733B-   03          ???
+733C-   C9 CE       CMP   #$CE
+733E-   D6 00       DEC   $00,X
+7340-   0A          ASL
+7341-   CB          ???
+7342-   C5 D9       CMP   $D9
+7344-   02          ???
+7345-   01 CF       ORA   ($CF,X)
+7347-   D5 D4       CMP   $D4,X
+7349-   00          BRK
+734A-   06 CF       ASL   $CF
+734C-   C6 C6       DEC   $C6
+734E-   00          BRK
+734F-   07          ???
+7350-   D7          ???
+7351-   C1 D2       CMP   ($D2,X)
+7353-   00          BRK
+7354-   08          PHP
+7355-   D2 D5       CMP   ($D5)
+7357-   CE 00 0E    DEC   $0E00
+735A-   C2          ???
+735B-   D9 C5 00    CMP   $00C5,Y
+735E-   16 D3       ASL   $D3,X
+7360-   C9 D4       CMP   #$D4
+7362-   00          BRK
+7363-   1D D9 C5    ORA   $C5D9,X
+7366-   D3          ???
+7367-   01 0B       ORA   ($0B,X)
+7369-   CE CF D4    DEC   $D4CF
+736C-   01 0C       ORA   ($0C,X)
+736E-   C8          INY
+736F-   CF          ???
+7370-   D7          ???
+7371-   01 0D       ORA   ($0D,X)
+7373-   D7          ???
+7374-   C8          INY
+7375-   D9 01 0E    CMP   $0E01,Y
+7378-   D7          ???
+7379-   C8          INY
+737A-   CF          ???
+737B-   01 0F       ORA   ($0F,X)
+737D-   C8          INY
+737E-   C1 D4       CMP   ($D4,X)
+7380-   02          ???
+7381-   03          ???
+7382-   D4          ???
+7383-   C9 C5       CMP   #$C5
+7385-   02          ???
+7386-   07          ???
+7387-   D0 C5       BNE   $734E
+7389-   CE 02 0E    DEC   $0E02
+738C-   CD C1 D0    CMP   $D0C1
+738F-   02          ???
+7390-   12 D9       ORA   ($D9)
+7392-   CF          ???
+7393-   D5 02       CMP   $02,X
+7395-   26 FF       ROL   $FF
+7397-   CB          ???
+7398-   CE CF C2    DEC   $C2CF
+739B-   00          BRK
+739C-   21 C4       AND   ($C4,X)
+739E-   C9 C1       CMP   #$C1
+73A0-   CC 00 21    CPY   $2100
+73A3-   D4          ???
+73A4-   D5 D2       CMP   $D2,X
+73A6-   CE 00 21    DEC   $2100
+73A9-   C4 D2       CPY   $D2
+73AB-   CF          ???
+73AC-   D0 00       BNE   $73AE
+73AE-   02          ???
+73AF-   D3          ???
+73B0-   C5 CC       CMP   $CC
+73B2-   CC 00 04    CPY   $0400
+73B5-   CC CF CF    CPY   $CFCF
+73B8-   CB          ???
+73B9-   00          BRK
+73BA-   14 C2       TRB   $C2
+73BC-   C1 C3       CMP   ($C3,X)
+73BE-   CB          ???
+73BF-   01 02       ORA   ($02,X)
+73C1-   CC C5 C6    CPY   $C6C5
+73C4-   D4          ???
+73C5-   01 03       ORA   ($03,X)
+73C7-   D7          ???
+73C8-   C5 D3       CMP   $D3
+73CA-   D4          ???
+73CB-   01 07       ORA   ($07,X)
+73CD-   C5 C1       CMP   $C1
+73CF-   D3          ???
+73D0-   D4          ???
+73D1-   01 08       ORA   ($08,X)
+73D3-   C4 CF       CPY   $CF
+73D5-   D7          ???
+73D6-   CE 01 0A    DEC   $0A01
+73D9-   C7          ???
+73DA-   D2 C1       CMP   ($C1)
+73DC-   C2          ???
+73DD-   00          BRK
+73DE-   01 CC       ORA   ($CC,X)
+73E0-   C9 C6       CMP   #$C6
+73E2-   D4          ???
+73E3-   00          BRK
+73E4-   01 D4       ORA   ($D4,X)
+73E6-   C1 CB       CMP   ($CB,X)
+73E8-   C5 00       CMP   $00
+73EA-   01 C8       ORA   ($C8,X)
+73EC-   C1 D6       CMP   ($D6,X)
+73EE-   C5 00       CMP   $00
+73F0-   01 CC       ORA   ($CC,X)
+73F2-   CF          ???
+73F3-   CE C7 00    DEC   $00C7
+73F6-   0C D4 C9    TSB   $C9D4
+73F9-   CD C5 00    CMP   $00C5
+73FC-   0C D7 C1    TSB   $C1D7
+73FF-   CE D4 00    DEC   $00D4
+7402-   0D CE C5    ORA   $C5CE
+7405-   C5 C4       CMP   $C4
+7407-   00          BRK
+7408-   0D CB CE    ORA   $CECB
+740B-   CF          ???
+740C-   D7          ???
+740D-   00          BRK
+740E-   0D C6 D2    ORA   $D2C6
+7411-   C5 C5       CMP   $C5
+7413-   00          BRK
+7414-   0E D1 D5    ASL   $D5D1
+7417-   C9 D4       CMP   #$D4
+7419-   00          BRK
+741A-   0F          ???
+741B-   D2 D5       CMP   ($D5)
+741D-   CE D3 00    DEC   $00D3
+7420-   10 CD       BPL   $73EF
+7422-   C5 C1       CMP   $C1
+7424-   CE 00 11    DEC   $1100
+7427-   CB          ???
+7428-   C9 CC       CMP   #$CC
+742A-   CC 00 12    CPY   $1200
+742D-   C2          ???
+742E-   CC CF D7    CPY   $D7CF
+7431-   00          BRK
+7432-   12 CD       ORA   ($CD)
+7434-   C1 D2       CMP   ($D2,X)
+7436-   D9 00 13    CMP   $1300,Y
+7439-   C8          INY
+743A-   C5 CC       CMP   $CC
+743C-   D0 00       BNE   $743E
+743E-   15 D3       ORA   $D3,X
+7440-   C1 D6       CMP   ($D6,X)
+7442-   C5 00       CMP   $00
+7444-   15 CC       ORA   $CC,X
+7446-   CF          ???
+7447-   C1 CE       CMP   ($CE,X)
+7449-   00          BRK
+744A-   19 CF D6    ORA   $D6CF,Y
+744D-   C5 D2       CMP   $D2
+744F-   00          BRK
+7450-   1B          ???
+7451-   CA          DEX
+7452-   D5 CD       CMP   $CD,X
+7454-   D0 00       BNE   $7456
+7456-   1B          ???
+7457-   D7          ???
+7458-   C1 CC       CMP   ($CC,X)
+745A-   CC 00 1B    CPY   $1B00
+745D-   D7          ???
+745E-   CF          ???
+745F-   CE D4 01    DEC   $01D4
+7462-   0C C3 C1    TSB   $C1C3
+7465-   CE D4 01    DEC   $01D4
+7468-   0C D7 C8    TSB   $C8D7
+746B-   C1 D4       CMP   ($D4,X)
+746D-   01 10       ORA   ($10,X)
+746F-   D7          ???
+7470-   C8          INY
+7471-   C5 CE       CMP   $CE
+7473-   01 11       ORA   ($11,X)
+7475-   C6 D5       DEC   $D5
+7477-   C3          ???
+7478-   CB          ???
+7479-   01 13       ORA   ($13,X)
+747B-   D3          ???
+747C-   C8          INY
+747D-   C9 D4       CMP   #$D4
+747F-   01 13       ORA   ($13,X)
+7481-   C8          INY
+7482-   C5 CC       CMP   $CC
+7484-   CC 01 13    CPY   $1301
+7487-   C4 C1       CPY   $C1
+7489-   CD CE 01    CMP   $01CE
+748C-   13          ???
+748D-   D4          ???
+748E-   CF          ???
+748F-   C7          ???
+7490-   C1 02       CMP   ($02,X)
+7492-   04 C7       TSB   $C7
+7494-   CF          ???
+7495-   CC C4 02    CPY   $02C4
+7498-   09 D2       ORA   #$D2
+749A-   CF          ???
+749B-   D0 C5       BNE   $7462
+749D-   02          ???
+749E-   15 D2       ORA   $D2,X
+74A0-   C1 C6       CMP   ($C6,X)
+74A2-   D4          ???
+74A3-   02          ???
+74A4-   18          CLC
+74A5-   C2          ???
+74A6-   CF          ???
+74A7-   CF          ???
+74A8-   CB          ???
+74A9-   02          ???
+74AA-   14 CC       TRB   $CC
+74AC-   C1 CD       CMP   ($CD,X)
+74AE-   C2          ???
+74AF-   02          ???
+74B0-   23          ???
+74B1-   D0 CC       BNE   $747F
+74B3-   D5 C7       CMP   $C7,X
+74B5-   02          ???
+74B6-   27          ???
+74B7-   C8          INY
+74B8-   C5 D2       CMP   $D2
+74BA-   C5 00       CMP   $00
+74BC-   28          PLP
+74BD-   C7          ???
+74BE-   C1 CD       CMP   ($CD,X)
+74C0-   C5 02       CMP   $02
+74C2-   2C D3 C1    BIT   $C1D3
+74C5-   C6 C5       DEC   $C5
+74C7-   02          ???
+74C8-   32 D3       AND   ($D3)
+74CA-   C5 CC       CMP   $CC
+74CC-   C6 00       DEC   $00
+74CE-   09 CC       ORA   #$CC
+74D0-   C9 D3       CMP   #$D3
+74D2-   D4          ???
+74D3-   00          BRK
+74D4-   1F          ???
+74D5-   D0 D2       BNE   $74A9
+74D7-   A3          ???
+74D8-   B6 00       LDX   $00,Y
+74DA-   20 CF D0    JSR   $D0CF
+74DD-   C5 CE       CMP   $CE
+74DF-   00          BRK
+74E0-   1A          INC
+74E1-   FF          ???
+74E2-   D4          ???
+74E3-   D7          ???
+74E4-   C9 D3       CMP   #$D3
+74E6-   D4          ???
+74E7-   00          BRK
+74E8-   21 C1       AND   ($C1,X)
+74EA-   C8          INY
+74EB-   C5 C1       CMP   $C1
+74ED-   C4 01       CPY   $01
+74EF-   01 D2       ORA   ($D2,X)
+74F1-   C9 C7       CMP   #$C7
+74F3-   C8          INY
+74F4-   D4          ???
+74F5-   01 04       ORA   ($04,X)
+74F7-   CE CF D2    DEC   $D2CF
+74FA-   D4          ???
+74FB-   C8          INY
+74FC-   01 05       ORA   ($05,X)
+74FE-   D3          ???
+74FF-   CF          ???
+7500-   D5 D4       CMP   $D4,X
+7502-   C8          INY
+7503-   01 06       ORA   ($06,X)
+7505-   C5 CE       CMP   $CE
+7507-   D4          ???
+7508-   C5 D2       CMP   $D2
+750A-   00          BRK
+750B-   05 CC       ORA   $CC
+750D-   C5 C1       CMP   $C1
+750F-   D6 C5       DEC   $C5,X
+7511-   00          BRK
+7512-   0E CC C5    ASL   $C5CC
+7515-   C1 C4       CMP   ($C4,X)
+7517-   D3          ???
+7518-   00          BRK
+7519-   10 C8       BPL   $74E3
+751B-   C5 C1       CMP   $C1
+751D-   C4 D3       CPY   $D3
+751F-   00          BRK
+7520-   10 D3       BPL   $74F5
+7522-   D4          ???
+7523-   C5 C1       CMP   $C1
+7525-   CC 00 1A    CPY   $1A00
+7528-   C3          ???
+7529-   CC C9 CD    CPY   $CDC9
+752C-   C2          ???
+752D-   00          BRK
+752E-   1B          ???
+752F-   C6 C5       DEC   $C5
+7531-   CE C3 C5    DEC   $C5C3
+7534-   00          BRK
+7535-   1B          ???
+7536-   D0 CC       BNE   $7504
+7538-   D5 C7       CMP   $C7,X
+753A-   C8          INY
+753B-   00          BRK
+753C-   1E C4 C9    ASL   $C9C4,X
+753F-   C4 CE       CPY   $CE
+7541-   D4          ???
+7542-   01 0C       ORA   ($0C,X)
+7544-   D7          ???
+7545-   C8          INY
+7546-   C5 D2       CMP   $D2
+7548-   C5 01       CMP   $01
+754A-   12 C2       ORA   ($C2)
+754C-   C9 D4       CMP   #$D4
+754E-   C3          ???
+754F-   C8          INY
+7550-   01 13       ORA   ($13,X)
+7552-   D0 C9       BNE   $751D
+7554-   C5 C3       CMP   $C3
+7556-   C5 02       CMP   $02
+7558-   08          PHP
+7559-   C3          ???
+755A-   CC CF D7    CPY   $D7CF
+755D-   CE 02 05    DEC   $0502
+7560-   C3          ???
+7561-   CC CF CE    CPY   $CECF
+7564-   C5 02       CMP   $02
+7566-   06 D0       ASL   $D0
+7568-   C1 D0       CMP   ($D0,X)
+756A-   C5 D2       CMP   $D2
+756C-   02          ???
+756D-   0F          ???
+756E-   D0 C1       BNE   $7531
+7570-   C9 CE       CMP   #$CE
+7572-   D4          ???
+7573-   02          ???
+7574-   10 D7       BPL   $754D
+7576-   C1 D4       CMP   ($D4,X)
+7578-   C3          ???
+7579-   C8          INY
+757A-   02          ???
+757B-   11 C3       ORA   ($C3),Y
+757D-   D2 CF       CMP   ($CF)
+757F-   D3          ???
+7580-   D3          ???
+7581-   02          ???
+7582-   0B          ???
+7583-   D0 CC       BNE   $7551
+7585-   C1 C3       CMP   ($C3,X)
+7587-   C5 00       CMP   $00
+7589-   28          PLP
+758A-   D0 C5       BNE   $7551
+758C-   C1 C3       CMP   ($C3,X)
+758E-   C5 02       CMP   $02
+7590-   29 C1       AND   #$C1
+7592-   D0 D0       BNE   $7564
+7594-   CC C5 02    CPY   $02C5
+7597-   2C D2 C5    BIT   $C5D2
+759A-   C2          ???
+759B-   C5 CC       CMP   $CC
+759D-   00          BRK
+759E-   09 FF       ORA   #$FF
+75A0-   D3          ???
+75A1-   D4          ???
+75A2-   C1 D3       CMP   ($D3,X)
+75A4-   C9 D3       CMP   #$D3
+75A6-   00          BRK
+75A7-   FD C5 D3    SBC   $D3C5,X
+75AA-   C3          ???
+75AB-   C1 D0       CMP   ($D0,X)
+75AD-   C5 00       CMP   $00
+75AF-   0E D2 C5    ASL   $C5D2
+75B2-   D3          ???
+75B3-   C9 C7       CMP   #$C7
+75B5-   CE 00 0F    DEC   $0F00
+75B8-   C3          ???
+75B9-   C8          INY
+75BA-   C1 D2       CMP   ($D2,X)
+75BC-   C7          ???
+75BD-   C5 00       CMP   $00
+75BF-   10 CD       BPL   $758E
+75C1-   D5 D2       CMP   $D2,X
+75C3-   C4 C5       CPY   $C5
+75C5-   D2 00       CMP   ($00)
+75C7-   12 CB       ORA   ($CB)
+75C9-   C9 CC       CMP   #$CC
+75CB-   CC C5 C4    CPY   $C4C5
+75CE-   00          BRK
+75CF-   12 D3       ORA   ($D3)
+75D1-   C5 C5       CMP   $C5
+75D3-   C9 CE       CMP   #$CE
+75D5-   C7          ???
+75D6-   00          BRK
+75D7-   16 D3       ASL   $D3,X
+75D9-   D7          ???
+75DA-   C9 D4       CMP   #$D4
+75DC-   C3          ???
+75DD-   C8          INY
+75DE-   00          BRK
+75DF-   1C D2 C5    TRB   $C5D2
+75E2-   C6 D5       DEC   $D5
+75E4-   D3          ???
+75E5-   C5 01       CMP   $01
+75E7-   0C C6 CF    TSB   $CFC6
+75EA-   D2 C7       CMP   ($C7)
+75EC-   C5 D4       CMP   $D4
+75EE-   01 0C       ORA   ($0C,X)
+75F0-   D3          ???
+75F1-   C9 CC       CMP   #$CC
+75F3-   D6 C5       DEC   $C5,X
+75F5-   D2 02       CMP   ($02)
+75F7-   19 D3 D4    ORA   $D4D3,Y
+75FA-   C9 C3       CMP   #$C3
+75FC-   CB          ???
+75FD-   D3          ???
+75FE-   02          ???
+75FF-   16 D3       ASL   $D3,X
+7601-   CF          ???
+7602-   C3          ???
+7603-   CB          ???
+7604-   C5 D4       CMP   $D4
+7606-   02          ???
+7607-   27          ???
+7608-   D5 CE       CMP   $CE,X
+760A-   D0 CC       BNE   $75D8
+760C-   D5 C7       CMP   $C7,X
+760E-   02          ???
+760F-   27          ???
+7610-   C9 D3       CMP   #$D3
+7612-   CC C1 CE    CPY   $CEC1
+7615-   C4 00       CPY   $00
+7617-   28          PLP
+7618-   D0 D2       BNE   $75EC
+761A-   C9 D3       CMP   #$D3
+761C-   CF          ???
+761D-   CE 00 28    DEC   $2800
+7620-   CD C1 D3    CMP   $D3C1
+7623-   D4          ???
+7624-   C5 D2       CMP   $D2
+7626-   02          ???
+7627-   2F          ???
+7628-   D2 C5       CMP   ($C5)
+762A-   C2          ???
+762B-   C5 CC       CMP   $CC
+762D-   CC 00 09    CPY   $0900
+7630-   D2 C5       CMP   ($C5)
+7632-   D6 CF       DEC   $CF,X
+7634-   CC D4 00    CPY   $00D4
+7637-   09 CD       ORA   #$CD
+7639-   D5 D4       CMP   $D4,X
+763B-   C9 CE       CMP   #$CE
+763D-   D9 00 09    CMP   $0900,Y
+7640-   FF          ???
+7641-   CB          ???
+7642-   C5 D9       CMP   $D9
+7644-   C8          INY
+7645-   CF          ???
+7646-   CC C5 02    CPY   $02C5
+7649-   1C CD C1    TRB   $C1CD
+764C-   C3          ???
+764D-   C8          INY
+764E-   C9 CE       CMP   #$CE
+7650-   C5 02       CMP   $02
+7652-   2C C6 CF    BIT   $CFC6
+7655-   D2 D7       CMP   ($D7)
+7657-   C1 D2       CMP   ($D2,X)
+7659-   C4 01       CPY   $01
+765B-   01 C6       ORA   ($C6,X)
+765D-   D2 C5       CMP   ($C5)
+765F-   C5 C4       CMP   $C4
+7661-   CF          ???
+7662-   CD 00 09    CMP   $0900
+7665-   C3          ???
+7666-   C1 D0       CMP   ($D0,X)
+7668-   D4          ???
+7669-   D5 D2       CMP   $D2,X
+766B-   C5 00       CMP   $00
+766D-   0D CC C9    ORA   $C9CC
+7670-   C2          ???
+7671-   C5 D2       CMP   $D2
+7673-   D4          ???
+7674-   D9 00 09    CMP   $0900,Y
+7677-   C4 C9       CPY   $C9
+7679-   C7          ???
+767A-   CE C9 D4    DEC   $D4C9
+767D-   D9 00 09    CMP   $0900,Y
+7680-   D0 D2       BNE   $7654
+7682-   C9 D6       CMP   #$D6
+7684-   C1 C3       CMP   ($C3,X)
+7686-   D9 00 09    CMP   $0900,Y
+7689-   C4 C5       CPY   $C5
+768B-   D3          ???
+768C-   D4          ???
+768D-   D2 CF       CMP   ($CF)
+768F-   D9 00 12    CMP   $1200,Y
+7692-   C4 C5       CPY   $C5
+7694-   D0 CF       BNE   $7665
+7696-   D3          ???
+7697-   C9 D4       CMP   #$D4
+7699-   00          BRK
+769A-   17          ???
+769B-   C2          ???
+769C-   C1 D3       CMP   ($D3,X)
+769E-   D4          ???
+769F-   C1 D2       CMP   ($D2,X)
+76A1-   C4 01       CPY   $01
+76A3-   13          ???
+76A4-   C1 D3       CMP   ($D3,X)
+76A6-   D3          ???
+76A7-   C8          INY
+76A8-   CF          ???
+76A9-   CC C5 01    CPY   $01C5
+76AC-   13          ???
+76AD-   C4 C9       CPY   $C9
+76AF-   D0 CC       BNE   $767D
+76B1-   CF          ???
+76B2-   CD C1 02    CMP   $02C1
+76B5-   0A          ASL
+76B6-   D7          ???
+76B7-   C1 D3       CMP   ($D3,X)
+76B9-   C8          INY
+76BA-   D4          ???
+76BB-   D5 C2       CMP   $C2,X
+76BD-   02          ???
+76BE-   17          ???
+76BF-   CD C1 D4    CMP   $D4C1
+76C2-   C3          ???
+76C3-   C8          INY
+76C4-   C5 D3       CMP   $D3
+76C6-   02          ???
+76C7-   0D C3 CF    ORA   $CFC3
+76CA-   CD D0 C1    CMP   $C1D0
+76CD-   D3          ???
+76CE-   D3          ???
+76CF-   02          ???
+76D0-   13          ???
+76D1-   D6 C9       DEC   $C9,X
+76D3-   CC CC C1    CPY   $C1CC
+76D6-   C7          ???
+76D7-   C5 00       CMP   $00
+76D9-   28          PLP
+76DA-   D3          ???
+76DB-   CC C1 D6    CPY   $D6C1
+76DE-   C5 D2       CMP   $D2
+76E0-   D9 02 2A    CMP   $2A02,Y
+76E3-   FF          ???
+76E4-   C8          INY
+76E5-   D5 CD       CMP   $CD,X
+76E7-   C1 CE       CMP   ($CE,X)
+76E9-   C9 D4       CMP   #$D4
+76EB-   D9 00 09    CMP   $0900,Y
+76EE-   C2          ???
+76EF-   C1 C3       CMP   ($C3,X)
+76F1-   CB          ???
+76F2-   D7          ???
+76F3-   C1 D2       CMP   ($D2,X)
+76F5-   C4 01       CPY   $01
+76F7-   02          ???
+76F8-   C3          ???
+76F9-   CF          ???
+76FA-   CD CD C1    CMP   $C1CD
+76FD-   CE C4 D3    DEC   $D3C4
+7700-   00          BRK
+7701-   10 CD       BPL   $76D0
+7703-   D5 D2       CMP   $D2,X
+7705-   C4 C5       CPY   $C5
+7707-   D2 C5       CMP   ($C5)
+7709-   C4 00       CPY   $00
+770B-   12 D5       ORA   ($D5)
+770D-   CD C2 D2    CMP   $D2C2
+7710-   C5 CC       CMP   $CC
+7712-   CC C1 02    CPY   $02C1
+7715-   02          ???
+7716-   D4          ???
+7717-   D2 C5       CMP   ($C5)
+7719-   C1 D3       CMP   ($D3,X)
+771B-   D5 D2       CMP   $D2,X
+771D-   C5 02       CMP   $02
+771F-   1B          ???
+7720-   C9 CD       CMP   #$CD
+7722-   D0 D2       BNE   $76F6
+7724-   C9 D3       CMP   #$D3
+7726-   CF          ???
+7727-   CE 00 28    DEC   $2800
+772A-   D3          ???
+772B-   D4          ???
+772C-   D2 C5       CMP   ($C5)
+772E-   CE C7 D4    DEC   $D4C7
+7731-   C8          INY
+7732-   02          ???
+7733-   2B          ???
+7734-   C3          ???
+7735-   CF          ???
+7736-   CD D0 D5    CMP   $D5D0
+7739-   D4          ???
+773A-   C5 D2       CMP   $D2
+773C-   02          ???
+773D-   2C C9 D3    BIT   $D3C9
+7740-   CC C1 CE    CPY   $CEC1
+7743-   C4 C5       CPY   $C5
+7745-   D2 02       CMP   ($02)
+7747-   31 FF       AND   ($FF),Y
+7749-   D2 C5       CMP   ($C5)
+774B-   C2          ???
+774C-   C5 CC       CMP   $CC
+774E-   CC C9 CF    CPY   $CFC9
+7751-   CE 00 09    DEC   $0900
+7754-   C9 CE       CMP   #$CE
+7756-   D6 C5       DEC   $C5,X
+7758-   CE D4 CF    DEC   $CFD4
+775B-   D2 D9       CMP   ($D9)
+775D-   00          BRK
+775E-   0A          ASL
+775F-   C9 C7       CMP   #$C7
+7761-   CE CF D2    DEC   $D2CF
+7764-   C1 CE       CMP   ($CE,X)
+7766-   C3          ???
+7767-   C5 00       CMP   $00
+7769-   0B          ???
+776A-   D7          ???
+776B-   C9 D4       CMP   #$D4
+776D-   C8          INY
+776E-   C4 D2       CPY   $D2
+7770-   C1 D7       CMP   ($D7,X)
+7772-   CC 00 18    CPY   $1800
+7775-   C3          ???
+7776-   C1 D2       CMP   ($D2,X)
+7778-   C5 D4       CMP   $D4
+777A-   C1 CB       CMP   ($CB,X)
+777C-   C5 D2       CMP   $D2
+777E-   02          ???
+777F-   2D FF C9    AND   $C9FF
+7782-   CE C4 C9    DEC   $C9C4
+7785-   D6 C9       DEC   $C9,X
+7787-   C4 D5       CPY   $D5
+7789-   C1 CC       CMP   ($CC,X)
+778B-   00          BRK
+778C-   09 D2       ORA   #$D2
+778E-   C5 D6       CMP   $D6
+7790-   CF          ???
+7791-   CC D5 D4    CPY   $D4D5
+7794-   C9 CF       CMP   #$CF
+7796-   CE 00 09    DEC   $0900
+7799-   CC C9 C2    CPY   $C2C9
+779C-   C5 D2       CMP   $D2
+779E-   C1 D4       CMP   ($D4,X)
+77A0-   C9 CF       CMP   #$CF
+77A2-   CE 00 09    DEC   $0900
+77A5-   D0 C5       BNE   $776C
+77A7-   D2 C3       CMP   ($C3)
+77A9-   CF          ???
+77AA-   CC C1 D4    CPY   $D4C1
+77AD-   CF          ???
+77AE-   D2 02       CMP   ($02)
+77B0-   0C C2 D2    TSB   $D2C2
+77B3-   CF          ???
+77B4-   CF          ???
+77B5-   CD D3 D4    CMP   $D4D3
+77B8-   C9 C3       CMP   #$C3
+77BA-   CB          ???
+77BB-   02          ???
+77BC-   1A          INC
+77BD-   FF          ???
+77BE-   C2          ???
+77BF-   D2 CF       CMP   ($CF)
+77C1-   D4          ???
+77C2-   C8          INY
+77C3-   C5 D2       CMP   $D2
+77C5-   C8          INY
+77C6-   CF          ???
+77C7-   CF          ???
+77C8-   C4 02       CPY   $02
+77CA-   2E C9 CE    ROL   $CEC9
+77CD-   C6 CF       DEC   $CF
+77CF-   D2 CD       CMP   ($CD)
+77D1-   C1 D4       CMP   ($D4,X)
+77D3-   C9 CF       CMP   #$CF
+77D5-   CE 02 30    DEC   $3002
+77D8-   FF          ???
+77D9-   C9 CE       CMP   #$CE
+77DB-   C4 C5       CPY   $C5
+77DD-   D0 C5       BNE   $77A4
+77DF-   CE C4 C5    DEC   $C5C4
+77E2-   CE C3 C5    DEC   $C5C3
+77E5-   00          BRK
+77E6-   09 FF       ORA   #$FF
+77E8-   C9 CE       CMP   #$CE
+77EA-   C4 C9       CPY   $C9
+77EC-   D6 C9       DEC   $C9,X
+77EE-   C4 D5       CPY   $D5
+77F0-   C1 CC       CMP   ($CC,X)
+77F2-   C9 D4       CMP   #$D4
+77F4-   D9 00 09    CMP   $0900,Y
+77F7-   FF          ???
+77F8-   FF          ???
+77F9-   FF          ???
+77FA-   FF          ???
+77FB-   FF          ???
+77FC-   FF          ???
+77FD-   FF          ???
+77FE-   FF          ???
+77FF-   01 EA       ORA   ($EA,X)
+7801-   EA          NOP
+7802-   EA          NOP
+7803-   A2 00       LDX   #$00
+7805-   BD 11 20    LDA   $2011,X
+7808-   4A          LSR
+7809-   FF          ???
+780A-   20 14 78    JSR   $7814
+780D-   20 DC 78    JSR   $78DC
+7810-   20 3F FF    JSR   $FF3F    F8ROM:RESTORE
+7813-   60          RTS
+7814-   AD 00 78    LDA   $7800
+7817-   85 25       STA   $25
+7819-   AD 01 78    LDA   $7801
+781C-   85 24       STA   $24
+781E-   8D FE 02    STA   $02FE
+7821-   A9 00       LDA   #$00
+7823-   8D 48 8A    STA   $8A48
+7826-   8D FA 02    STA   $02FA
+7829-   AE 02 78    LDX   $7802
+782C-   E8          INX
+782D-   8E FF 02    STX   $02FF
+7830-   20 4A F9    JSR   $F94A    F8ROM:PRBL2
+7833-   A2 00       LDX   #$00
+7835-   A9 A0       LDA   #$A0
+7837-   9D 00 02    STA   $0200,X
+783A-   E8          INX
+783B-   EC FF 02    CPX   $02FF
+783E-   90 F7       BCC   $7837
+7840-   F0 F5       BEQ   $7837
+7842-   A9 01       LDA   #$01
+7844-   8D 47 8A    STA   $8A47
+7847-   AE FA 02    LDX   $02FA
+784A-   BD 00 02    LDA   $0200,X
+784D-   20 D3 78    JSR   $78D3
+7850-   20 1B FD    JSR   $FD1B    F8ROM:KEYIN
+7853-   8D F9 02    STA   $02F9
+7856-   A9 00       LDA   #$00
+7858-   8D 47 8A    STA   $8A47
+785B-   AE FA 02    LDX   $02FA
+785E-   BD 00 02    LDA   $0200,X
+7861-   20 D3 78    JSR   $78D3
+7864-   AD F9 02    LDA   $02F9
+7867-   C9 95       CMP   #$95
+7869-   F0 23       BEQ   $788E
+786B-   C9 88       CMP   #$88
+786D-   F0 30       BEQ   $789F
+786F-   C9 8D       CMP   #$8D
+7871-   F0 3A       BEQ   $78AD
+7873-   C9 A0       CMP   #$A0
+7875-   F0 48       BEQ   $78BF
+7877-   C9 DB       CMP   #$DB
+7879-   B0 C7       BCS   $7842
+787B-   C9 C1       CMP   #$C1
+787D-   B0 40       BCS   $78BF
+787F-   C9 A3       CMP   #$A3
+7881-   F0 3C       BEQ   $78BF
+7883-   C9 B0       CMP   #$B0
+7885-   90 BB       BCC   $7842
+7887-   C9 BA       CMP   #$BA
+7889-   B0 B7       BCS   $7842
+788B-   4C BF 78    JMP   $78BF
+788E-   AD FA 02    LDA   $02FA
+7891-   CD 02 78    CMP   $7802
+7894-   F0 AC       BEQ   $7842
+7896-   EE FA 02    INC   $02FA
+7899-   EE FE 02    INC   $02FE
+789C-   4C 42 78    JMP   $7842
+789F-   AD FA 02    LDA   $02FA
+78A2-   F0 9E       BEQ   $7842
+78A4-   CE FA 02    DEC   $02FA
+78A7-   CE FE 02    DEC   $02FE
+78AA-   4C 42 78    JMP   $7842
+78AD-   38          SEC
+78AE-   AD 02 78    LDA   $7802
+78B1-   ED FA 02    SBC   $02FA
+78B4-   90 08       BCC   $78BE
+78B6-   F0 06       BEQ   $78BE
+78B8-   AA          TAX
+78B9-   C6 24       DEC   $24
+78BB-   20 4A F9    JSR   $F94A    F8ROM:PRBL2
+78BE-   60          RTS
+78BF-   AE FA 02    LDX   $02FA
+78C2-   EC 02 78    CPX   $7802
+78C5-   B0 C2       BCS   $7889
+78C7-   AD F9 02    LDA   $02F9
+78CA-   9D 00 02    STA   $0200,X
+78CD-   20 D3 78    JSR   $78D3
+78D0-   4C 8E 78    JMP   $788E
+78D3-   AC FE 02    LDY   $02FE
+78D6-   84 24       STY   $24
+78D8-   20 87 8A    JSR   $8A87
+78DB-   60          RTS
+78DC-   A2 00       LDX   #$00
+78DE-   8E 03 78    STX   $7803
+78E1-   EC FA 02    CPX   $02FA
+78E4-   90 01       BCC   $78E7
+78E6-   60          RTS
+78E7-   BD 00 02    LDA   $0200,X
+78EA-   C9 A0       CMP   #$A0
+78EC-   D0 04       BNE   $78F2
+78EE-   E8          INX
+78EF-   4C E7 78    JMP   $78E7
+78F2-   8E FD 02    STX   $02FD
+78F5-   E8          INX
+78F6-   A9 00       LDA   #$00
+78F8-   8D FB 02    STA   $02FB
+78FB-   BD 00 02    LDA   $0200,X
+78FE-   C9 A0       CMP   #$A0
+7900-   F0 09       BEQ   $790B
+7902-   EE FB 02    INC   $02FB
+7905-   E8          INX
+7906-   EC FA 02    CPX   $02FA
+7909-   90 F0       BCC   $78FB
+790B-   CA          DEX
+790C-   8E FC 02    STX   $02FC
+790F-   20 1A 79    JSR   $791A
+7912-   AE FC 02    LDX   $02FC
+7915-   E8          INX
+7916-   E8          INX
+7917-   4C E1 78    JMP   $78E1
+791A-   EE FB 02    INC   $02FB
+791D-   AD FB 02    LDA   $02FB
+7920-   0A          ASL
+7921-   A8          TAY
+7922-   8C B5 79    STY   $79B5
+7925-   B9 8D 79    LDA   $798D,Y
+7928-   85 EB       STA   $EB
+792A-   8D B6 79    STA   $79B6
+792D-   C8          INY
+792E-   B9 8D 79    LDA   $798D,Y
+7931-   85 EC       STA   $EC
+7933-   8D B7 79    STA   $79B7
+7936-   A0 00       LDY   #$00
+7938-   AE FD 02    LDX   $02FD
+793B-   B1 EB       LDA   ($EB),Y
+793D-   C9 FF       CMP   #$FF
+793F-   D0 01       BNE   $7942
+7941-   60          RTS
+7942-   BD 00 02    LDA   $0200,X
+7945-   8D B8 79    STA   $79B8
+7948-   B1 EB       LDA   ($EB),Y
+794A-   8D B9 79    STA   $79B9
+794D-   DD 00 02    CMP   $0200,X
+7950-   D0 21       BNE   $7973
+7952-   E8          INX
+7953-   C8          INY
+7954-   AD FC 02    LDA   $02FC
+7957-   8D BA 79    STA   $79BA
+795A-   8E BB 79    STX   $79BB
+795D-   EC FC 02    CPX   $02FC
+7960-   90 E0       BCC   $7942
+7962-   F0 DE       BEQ   $7942
+7964-   B1 EB       LDA   ($EB),Y
+7966-   AA          TAX
+7967-   C8          INY
+7968-   B1 EB       LDA   ($EB),Y
+796A-   9D 04 78    STA   $7804,X
+796D-   A9 01       LDA   #$01
+796F-   8D 03 78    STA   $7803
+7972-   60          RTS
+7973-   E8          INX
+7974-   C8          INY
+7975-   EC FC 02    CPX   $02FC
+7978-   90 F9       BCC   $7973
+797A-   F0 F7       BEQ   $7973
+797C-   C8          INY
+797D-   C8          INY
+797E-   18          CLC
+797F-   98          TYA
+7980-   65 EB       ADC   $EB
+7982-   85 EB       STA   $EB
+7984-   A5 EC       LDA   $EC
+7986-   69 00       ADC   #$00
+7988-   85 EC       STA   $EC
+798A-   4C 36 79    JMP   $7936
+798D-   E4 72       CPX   $72
+798F-   00          BRK
+7990-   72 00       ADC   ($00)
+7992-   73          ???
+7993-   00          BRK
+7994-   73          ???
+7995-   97          ???
+7996-   73          ???
+7997-   E2          ???
+7998-   74 A0       STZ   $A0,X
+799A-   75 41       ADC   $41,X
+799C-   76 E4       ROR   $E4,X
+799E-   76 49       ROR   $49,X
+79A0-   77          ???
+79A1-   81 77       STA   ($77,X)
+79A3-   BE 77 D9    LDX   $D977,Y
+79A6-   77          ???
+79A7-   E8          INX
+79A8-   77          ???
+79A9-   F8          SED
+79AA-   77          ???
+79AB-   F9 77 FA    SBC   $FA77,Y
+79AE-   77          ???
+79AF-   FB          ???
+79B0-   77          ???
+79B1-   FC          ???
+79B2-   77          ???
+79B3-   FD 77 FE    SBC   $FE77,X
+79B6-   77          ???
+79B7-   33          ???

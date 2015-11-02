@@ -1,0 +1,39 @@
+0800-   A9 00       LDA   #$00
+0802-   D0 15       BNE   $0819
+0804-   A9 FE       LDA   #$FE
+0806-   85 00       STA   $00
+0808-   A9 01       LDA   #$01
+080A-   85 01       STA   $01
+080C-   20 34 1F    JSR   $1F34
+080F-   20 41 1F    JSR   $1F41
+0812-   E6 01       INC   $01
+0814-   C6 00       DEC   $00
+0816-   D0 F4       BNE   $080C
+0818-   60          RTS
+0819-   A9 01       LDA   #$01
+081B-   85 00       STA   $00
+081D-   A9 FE       LDA   #$FE
+081F-   85 01       STA   $01
+0821-   20 41 1F    JSR   $1F41
+0824-   20 34 1F    JSR   $1F34
+0827-   E6 00       INC   $00
+0829-   C6 01       DEC   $01
+082B-   D0 F4       BNE   $0821
+082D-   60          RTS
+082E-   A2 03       LDX   #$03
+0830-   CA          DEX
+0831-   D0 FD       BNE   $0830
+0833-   60          RTS
+0834-   2C 54 C0    BIT   $C054    rw:TXTPAGE1
+0837-   A5 00       LDA   $00
+0839-   20 2E 1F    JSR   $1F2E
+083C-   E9 01       SBC   #$01
+083E-   D0 F9       BNE   $0839
+0840-   60          RTS
+0841-   2C 55 C0    BIT   $C055    rw:TXTPAGE2
+0844-   A5 01       LDA   $01
+0846-   20 2E 1F    JSR   $1F2E
+0849-   E9 01       SBC   #$01
+084B-   D0 F9       BNE   $0846
+084D-   60          RTS
+084E-   99 99 00    STA   $0099,Y

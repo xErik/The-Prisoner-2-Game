@@ -1,0 +1,178 @@
+1C00-   20 4A FF    JSR   $FF4A    F8ROM:SAVE
+1C03-   A9 00       LDA   #$00
+1C05-   8D B4 1E    STA   $1EB4
+1C08-   AA          TAX
+1C09-   9D 94 1D    STA   $1D94,X
+1C0C-   E0 FF       CPX   #$FF
+1C0E-   F0 04       BEQ   $1C14
+1C10-   E8          INX
+1C11-   4C 09 1C    JMP   $1C09
+1C14-   A5 4E       LDA   $4E
+1C16-   8D B5 1E    STA   $1EB5
+1C19-   20 08 1D    JSR   $1D08
+1C1C-   0A          ASL
+1C1D-   38          SEC
+1C1E-   E9 01       SBC   #$01
+1C20-   8D B6 1E    STA   $1EB6
+1C23-   8D B9 1E    STA   $1EB9
+1C26-   8D B7 1E    STA   $1EB7
+1C29-   20 08 1D    JSR   $1D08
+1C2C-   0A          ASL
+1C2D-   38          SEC
+1C2E-   E9 01       SBC   #$01
+1C30-   8D BB 1E    STA   $1EBB
+1C33-   8D BE 1E    STA   $1EBE
+1C36-   8D BC 1E    STA   $1EBC
+1C39-   A9 02       LDA   #$02
+1C3B-   20 1C 1D    JSR   $1D1C
+1C3E-   20 08 1D    JSR   $1D08
+1C41-   8D C1 1E    STA   $1EC1
+1C44-   8D C0 1E    STA   $1EC0
+1C47-   20 65 1D    JSR   $1D65
+1C4A-   AD B6 1E    LDA   $1EB6
+1C4D-   18          CLC
+1C4E-   6D BA 1E    ADC   $1EBA
+1C51-   8D B8 1E    STA   $1EB8
+1C54-   18          CLC
+1C55-   6D BA 1E    ADC   $1EBA
+1C58-   8D B9 1E    STA   $1EB9
+1C5B-   AD BB 1E    LDA   $1EBB
+1C5E-   18          CLC
+1C5F-   6D BF 1E    ADC   $1EBF
+1C62-   8D BD 1E    STA   $1EBD
+1C65-   18          CLC
+1C66-   6D BF 1E    ADC   $1EBF
+1C69-   8D BE 1E    STA   $1EBE
+1C6C-   20 25 1D    JSR   $1D25
+1C6F-   D0 25       BNE   $1C96
+1C71-   A9 02       LDA   #$02
+1C73-   20 1C 1D    JSR   $1D1C
+1C76-   AD B9 1E    LDA   $1EB9
+1C79-   8D B6 1E    STA   $1EB6
+1C7C-   AD BE 1E    LDA   $1EBE
+1C7F-   8D BB 1E    STA   $1EBB
+1C82-   AD B8 1E    LDA   $1EB8
+1C85-   8D B9 1E    STA   $1EB9
+1C88-   AD BD 1E    LDA   $1EBD
+1C8B-   8D BE 1E    STA   $1EBE
+1C8E-   A9 02       LDA   #$02
+1C90-   20 1C 1D    JSR   $1D1C
+1C93-   4C 3E 1C    JMP   $1C3E
+1C96-   20 51 1D    JSR   $1D51
+1C99-   F0 03       BEQ   $1C9E
+1C9B-   4C 47 1C    JMP   $1C47
+1C9E-   AD B6 1E    LDA   $1EB6
+1CA1-   8D B9 1E    STA   $1EB9
+1CA4-   AD BB 1E    LDA   $1EBB
+1CA7-   8D BE 1E    STA   $1EBE
+1CAA-   CD BC 1E    CMP   $1EBC
+1CAD-   D0 0B       BNE   $1CBA
+1CAF-   AD B6 1E    LDA   $1EB6
+1CB2-   CD B7 1E    CMP   $1EB7
+1CB5-   D0 03       BNE   $1CBA
+1CB7-   4C 3F FF    JMP   $FF3F    F8ROM:RESTORE
+1CBA-   A9 01       LDA   #$01
+1CBC-   20 1C 1D    JSR   $1D1C
+1CBF-   20 08 1D    JSR   $1D08
+1CC2-   8D C1 1E    STA   $1EC1
+1CC5-   8D C0 1E    STA   $1EC0
+1CC8-   20 65 1D    JSR   $1D65
+1CCB-   AD B6 1E    LDA   $1EB6
+1CCE-   18          CLC
+1CCF-   6D BA 1E    ADC   $1EBA
+1CD2-   8D B9 1E    STA   $1EB9
+1CD5-   AD BB 1E    LDA   $1EBB
+1CD8-   18          CLC
+1CD9-   6D BF 1E    ADC   $1EBF
+1CDC-   8D BE 1E    STA   $1EBE
+1CDF-   20 25 1D    JSR   $1D25
+1CE2-   C9 02       CMP   #$02
+1CE4-   F0 06       BEQ   $1CEC
+1CE6-   20 51 1D    JSR   $1D51
+1CE9-   4C C8 1C    JMP   $1CC8
+1CEC-   A9 01       LDA   #$01
+1CEE-   20 1C 1D    JSR   $1D1C
+1CF1-   AD B9 1E    LDA   $1EB9
+1CF4-   18          CLC
+1CF5-   6D BA 1E    ADC   $1EBA
+1CF8-   8D B6 1E    STA   $1EB6
+1CFB-   AD BE 1E    LDA   $1EBE
+1CFE-   18          CLC
+1CFF-   6D BF 1E    ADC   $1EBF
+1D02-   8D BB 1E    STA   $1EBB
+1D05-   4C 3E 1C    JMP   $1C3E
+1D08-   EE B5 1E    INC   $1EB5
+1D0B-   8D B5 1E    STA   $1EB5
+1D0E-   18          CLC
+1D0F-   6D B4 1E    ADC   $1EB4
+1D12-   29 1F       AND   #$1F
+1D14-   8D B4 1E    STA   $1EB4
+1D17-   AA          TAX
+1D18-   BD 94 1E    LDA   $1E94,X
+1D1B-   60          RTS
+1D1C-   A8          TAY
+1D1D-   20 45 1D    JSR   $1D45
+1D20-   98          TYA
+1D21-   9D 94 1D    STA   $1D94,X
+1D24-   60          RTS
+1D25-   AD B9 1E    LDA   $1EB9
+1D28-   C9 01       CMP   #$01
+1D2A-   90 16       BCC   $1D42
+1D2C-   C9 0E       CMP   #$0E
+1D2E-   B0 12       BCS   $1D42
+1D30-   AD BE 1E    LDA   $1EBE
+1D33-   C9 01       CMP   #$01
+1D35-   90 0B       BCC   $1D42
+1D37-   C9 0E       CMP   #$0E
+1D39-   B0 07       BCS   $1D42
+1D3B-   20 45 1D    JSR   $1D45
+1D3E-   BD 94 1D    LDA   $1D94,X
+1D41-   60          RTS
+1D42-   A9 FF       LDA   #$FF
+1D44-   60          RTS
+1D45-   AD BE 1E    LDA   $1EBE
+1D48-   0A          ASL
+1D49-   0A          ASL
+1D4A-   0A          ASL
+1D4B-   0A          ASL
+1D4C-   0D B9 1E    ORA   $1EB9
+1D4F-   AA          TAX
+1D50-   60          RTS
+1D51-   AD C0 1E    LDA   $1EC0
+1D54-   18          CLC
+1D55-   69 01       ADC   #$01
+1D57-   C9 05       CMP   #$05
+1D59-   90 03       BCC   $1D5E
+1D5B-   38          SEC
+1D5C-   E9 04       SBC   #$04
+1D5E-   8D C0 1E    STA   $1EC0
+1D61-   CD C1 1E    CMP   $1EC1
+1D64-   60          RTS
+1D65-   A9 00       LDA   #$00
+1D67-   8D BA 1E    STA   $1EBA
+1D6A-   8D BF 1E    STA   $1EBF
+1D6D-   AD C0 1E    LDA   $1EC0
+1D70-   C9 01       CMP   #$01
+1D72-   F0 0E       BEQ   $1D82
+1D74-   C9 02       CMP   #$02
+1D76-   F0 10       BEQ   $1D88
+1D78-   C9 03       CMP   #$03
+1D7A-   F0 12       BEQ   $1D8E
+1D7C-   A9 01       LDA   #$01
+1D7E-   8D BA 1E    STA   $1EBA
+1D81-   60          RTS
+1D82-   A9 FF       LDA   #$FF
+1D84-   8D BF 1E    STA   $1EBF
+1D87-   60          RTS
+1D88-   A9 01       LDA   #$01
+1D8A-   8D BF 1E    STA   $1EBF
+1D8D-   60          RTS
+1D8E-   A9 FF       LDA   #$FF
+1D90-   8D BA 1E    STA   $1EBA
+1D93-   60          RTS
+1D94-   00          BRK
+1D95-   8D 44 8A    STA   $8A44
+1D98-   60          RTS
+1D99-   C9 43       CMP   #$43
+1D9B-   D0 1F       BNE   $1DBC
+1D9D-   20 72 8D    JSR   $8D72
